@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.UpdateController">
+   <children>
+      <AnchorPane prefHeight="42.0" prefWidth="350.0" style="-fx-background-color: #d32f2f;">
+         <children>
+            <Label alignment="CENTER" layoutX="132.0" text="ToDo" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="tfTask" layoutX="79.0" layoutY="62.0" prefHeight="38.0" prefWidth="192.0" promptText="Task" />
+      <TextField fx:id="tfDescription" layoutX="79.0" layoutY="110.0" prefHeight="38.0" prefWidth="192.0" promptText="Description" />
+      <Button fx:id="bUpdate" layoutX="132.0" layoutY="155.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: #424242;" text="Update" textFill="WHITE" />
+   </children>
+</AnchorPane>

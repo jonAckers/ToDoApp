@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ListController">
+   <children>
+      <AnchorPane prefHeight="101.0" prefWidth="700.0" style="-fx-background-color: #d32f2f;">
+         <children>
+            <Label alignment="CENTER" layoutX="292.0" layoutY="16.0" text="ToDo" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="lvTask" layoutX="343.0" layoutY="112.0" prefHeight="278.0" prefWidth="343.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </ListView>
+      <AnchorPane layoutX="14.0" layoutY="112.0" prefHeight="278.0" prefWidth="302.0">
+         <children>
+            <TextField fx:id="tfTask" layoutX="15.0" layoutY="36.0" prefHeight="57.0" prefWidth="289.0" promptText="Task">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfDescription" layoutX="15.0" layoutY="112.0" prefHeight="57.0" prefWidth="289.0" promptText="Descritpion">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Button fx:id="bSaveTask" layoutX="101.0" layoutY="201.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="117.0" style="-fx-background-color: #424242;" text="Save Task" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

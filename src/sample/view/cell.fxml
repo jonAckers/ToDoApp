@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pAnchor" prefHeight="87.0" prefWidth="320.0" style="-fx-background-color: #606060;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="51.0" fitWidth="56.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon_tasks.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lTask" layoutX="60.0" layoutY="5.0" text="Task" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lDescription" layoutX="59.0" layoutY="25.0" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #606060;" text="Description" textFill="#dddddd" />
+      <Label fx:id="lDate" alignment="CENTER_RIGHT" layoutX="60.0" layoutY="70.0" prefHeight="17.0" prefWidth="235.0" text="Date Created" textFill="#d32f2f" />
+      <ImageView fx:id="bDelete" fitHeight="40.0" fitWidth="26.0" layoutX="282.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon_delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bRefresh" fitHeight="40.0" fitWidth="26.0" layoutX="282.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon_update.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
